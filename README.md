@@ -20,7 +20,9 @@ Raw data can be found on Elja at this location:
 Here is a workflow that we used: 
 (https://kimberleya.github.io/Cut-and-run-analyses/analysis)
 
-## Creating bigWig files normalised to genome coverage for visualising with UCSC browser or some other tool. You can do something like this using samTools and deepTools
+## Creating bigWig files 
+
+Making bigWig files normalised to genome coverage for visualising with UCSC browser or some other tool. You can do something like this using samTools and deepTools:
 
 ```
 #Making bigWig files from bam files for visualisation on genome browser, normalised to 1x coverage of mouse genome
