@@ -11,4 +11,4 @@ bcl2fastq --sample-sheet 20230118_AHN2FNDSX2_sample_sheet.csv --runfolder-dir 23
 ## Alignment and remaining processing
 
 Here is a workflow that we used: 
-[a relative link](CutandRun.html)
+(https://kimberleya.github.io/Cut-and-run-analyses/)
