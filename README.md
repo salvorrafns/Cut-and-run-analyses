@@ -2,7 +2,7 @@
 
 ## Demultiplexing bcl files from sequencer from Decode
 
-Here is the sample sheet we used for demultiplexing: [a relative link](20230118_AHN2FNDSX2_sample_sheet.csv)
+Here is the sample sheet we used for demultiplexing: [sample sheet](20230118_AHN2FNDSX2_sample_sheet.csv)
 
 This is the command used on Elja for demultiplexing:
 ```
