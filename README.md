@@ -14,6 +14,10 @@ Raw data can be found on Elja at this location:
 ```
 /hpcdata/Mimir/kimberl/20230116_Decode_CutandRun_decode_230116/20230118_fastq/20230116_temperature_cutandrun
 ```
+Raw fastq files for NPCs can be found at on of the hard drives that Salvör has, called Salvor-phd2 at this location:
+```
+"E:\decode_230116\20230118_Fastq_files\20230116_temperature_fastq_files"
+```
 
 ## Alignment and remaining processing
 
