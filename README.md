@@ -31,5 +31,22 @@ samtools index SMYD5_FLAG_merge.bam
 bamCoverage --bam SMYD5_FLAG_merge.bam -o SMYD5_FLAG_merge_depthnorm.bw -p max --binSize 5 --normalizeUsing RPGC --effectiveGenomeSize  2652783500 --ignoreForNormalization chrX --extendReads
 
 samtools index control.bam
-bamCoverage --bam control.bam -o control_depthnorm.bw -p max --binSize 5 --normalizeUsing RPGC --effectiveGenomeSize  2652783500 --ignoreForNormalization chrX --extendReads
+bamCoverage --bam control.bam -o control_depthnorm.bw -p max --binSize 5 --normalizeUsing RPGC --effectiveGenomeSize  2652783500 --ignoreForNormalization chrX --extendReads #RPCG normalized
+bamCoverage --bam [filename].bam -o [filename]_ecoli.bw --binSize 5  --scaleFactor [1/%E.Coli aligned reads of total reads in BAM file] --numberOfProcessors 64 # E.coli normalized
+```
+## Merge the e. coli normalized bigwig files 
+Using bigWigMerge from UCSC tools for visualization for the figures 
+see: https://www.biostars.org/p/209443/
+```
+```
+
+## MACS3 peak calling
+Followed protocol: https://macs3-project.github.io/MACS/docs/callpeak.html
+
+Preprocessing
+1. Filter out all duplicates, for all files: H3K36me3, SMYD5 and IgG
+2. 
+```
+macs3 filterdup -i NPC_rep1_32_H3K36_S48.bam --keep-dup=1 -o NPC_rep1_32_H3K36_filterdup.bam
+
 ```
