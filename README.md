@@ -14,6 +14,18 @@ Raw data can be found on Elja at this location:
 ```
 /hpcdata/Mimir/kimberl/20230116_Decode_CutandRun_decode_230116/20230118_fastq/20230116_temperature_cutandrun
 ```
+Fastq-files for NPC, all rep (missing NPC_rep1_H3K36_32 /[]_37), are located on the Salvor_phd2 hard drive at the location:
+```
+/decode_230116/20230118_Fastq_files/20230116_temperature_fastq_files
+```
+NPC rep 3 and 4 were excluded as Sara did IF staining and most of the cells in NPC rep 3 and 4 were astrocytes. Fastq-files for HEK293, all reps, and NPC, rep 3 and 4m are located on the Salvor_phd2 hard drive at the location:
+```
+/20230116_temperature_cutandrun/20230116_temperature_fastq_files
+```
+Fastq-files for NPC, NPC_rep1_H3K36_32 /[]_37, canbe found at Salvor_phd2 hard drive at the location:
+```
+/geo_submission_june_smyd5/cut&run
+```
 
 ## Alignment and remaining processing
 
