@@ -54,11 +54,17 @@ see: https://www.biostars.org/p/209443/
 
 ## MACS3 peak calling
 Followed protocol: https://macs3-project.github.io/MACS/docs/callpeak.html
-
-Preprocessing
-1. Filter out all duplicates, for all files: H3K36me3, SMYD5 and IgG
-2. 
+Turned off internal filteration and did not do any preprocessing as it cause the loss of peaks.
 ```
-macs3 filterdup -i NPC_rep1_32_H3K36_S48.bam --keep-dup=1 -o NPC_rep1_32_H3K36_filterdup.bam
+
 
 ```
+Output files: 
+Narrow peak calling:
+1) NarrowPeak
+Broad peak calling: 
+1) BroadPeak 
+2)  GappedPeak is a representation of narrow peaks as blocks over a broad peak. To trick the visualisation tools, they use the same format as gene models, but use the narrow peak coordinates as exons coordinates and the broad peak coordinates as coding region coordinate. UCSC gappedPeak format which encapsulates a nested structure of peaks. To conceptualize ‘nested’ peaks, picture a gene structure housing regions analogous to exons (strong peaks) and introns coupled with UTRs (weak peaks). The broad peak calling process utilizes two distinct cutoffs to discern broader, weaker peaks (--broad-cutoff) and narrower, stronger peaks (-p or -q), which are subsequently nested to provide a detailed peak landscape. 
+
+Merging of peaks:
+A called narrow peak has to be longer than min-length, and if the distance between two nearby peaks is smaller than max-gap then they will be merged as one. DEFAULT value for min-length as the predicted fragment size d. max-gap for merging nearby stronger broad peaks will be the same as narrow peak calling, and 4 times of the max-gap will be used to merge nearby weaker (broad) peaks.
